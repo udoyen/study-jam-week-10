@@ -41,7 +41,7 @@ data = [
 ]
 
 
-def hello_world(request):
+def get_all(self):
     """Responds to any HTTP request.
     Args:
         request (flask.Request): HTTP request object.
@@ -50,27 +50,17 @@ def hello_world(request):
         Response object using
         `make_response <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>`.
     """
-    request_json = request.get_json()
-    if request.args and 'message' in request.args:
-        return request.args.get('message')
-    elif request_json and 'message' in request_json:
-        return request_json['message']
-    else:
-        return jsonify(data)
+    return jsonify(data)
 
 
-def get_names(request):
-    request_json = request.get_json()
-    plist = []
-    persons = json.loads(json.dumps(data))
-    for person in persons:
-        plist.append(person)
-    if request.args and 'message' in request.args:
-        return request.args.get('message')
-    elif request_json and 'message' in request_json:
-        return request_json['message']
+def get_names(self):
+    persons = json.loads(json.dumps(data))    
+    v = {p for p in [person['name'] for person in persons]}
+    final = {"Name": list(v)}
+    if final:
+        return jsonify(final)    
     else:
-        return jsonify(data)
+        return "No records!"
       
 
 
