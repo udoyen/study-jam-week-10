@@ -1,0 +1,36 @@
+# create service account to use with terraform
+
+gcloud iam service-accounts create <name> --display-name <display_name> --description <description>
+
+# Add the needed roles to the service account
+
+
+gcloud projects add-iam-policy-binding <project_name> --member serviceAccount:<service_account_name>@<project_name>.iam.gserviceaccount.com --role roles/container.admin
+gcloud projects add-iam-policy-binding <project_name> --member serviceAccount:<service_account_name>@<project_name>.iam.gserviceaccount.com --role roles/compute.admin
+gcloud projects add-iam-policy-binding <project_name> --member serviceAccount:<service_account_name>@<project_name>.iam.gserviceaccount.com --role roles/iam.serviceAccountUser
+gcloud projects add-iam-policy-binding <project_name> --member serviceAccount:<service_account_name>@<project_name>.iam.gserviceaccount.com --role roles/resourcemanager.projectIamAdmin
+
+# Download the credentials key for the service account
+
+gcloud iam service-accounts keys create terraform-gke-keyfile.json --iam-account=<service_account_name>@<project_name>.iam.gserviceaccount.com
+
+
+# Create gcp bucket to store terraform state
+
+gsutil mb -c regional -l europe-west2 gs://gke-state-bucket
+
+# Enable versioning on bucket
+
+gsutil versioning set on gs://<bucket_name>
+
+# Set the bucket to only keep 3 versions
+
+gsutil lifecycle set projects/lifecycle-delete-rule.json gs://gke-state-bucket
+
+# Give write access the gke cluster service account
+
+gsutil iam ch serviceAccount:cluster-service-account@steam-kingdom-311415.iam.gserviceaccount.com:objectCreator gs://gke-state-bucket
+gsutil iam ch serviceAccount:cluster-service-account@steam-kingdom-311415.iam.gserviceaccount.com:objectViewer gs://gke-state-bucket
+
+
+

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "steam-kingdom-311415",
+  "private_key_id": "73c5b59587e66463ff5361c2f6dfce58c0fc24d8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD0lIkK+gkWykhp\nJcIzvFizQsnW7TsBlKnJ00jxpLkVIcUfOu9jNOGdCg20obi3KYy6GJqHqBTgUePn\nK1d1m9QJz1wYtRL3I+kTJj/6sgYMBwvk2ghMgsJ3u1C2NBfic4za+bWtadjk1eSF\neKrRCM+RPpzrfJgdWDa6o+hw0lVu422/lvNPY3B9r/zqZzx8CQ4bqfIuUAvuzzcU\nRnWZFvdeHPYWapvEyr7HGTdoQ6T4tmp9NQzcidAbEWw8Hrx6YQuMXz1MAEqXWVCT\n9EDLNQgkb1/sNqj+bjRJV2ZxvgM7dccy0noqUxWZg6Dwn8fCzOCm3gJsZ2rX9QSs\n/jUj/gXzAgMBAAECggEAa3pgdK3m05iF1IsOucxxUCkv6F5smSe6qyHJgsLnwIUM\nCkrMStTAtlFmL3QH55l/KYJJWga/Uco6s+nkb57QQZVZe9QKpwclU9BxuhmENcHc\n9K7pibHGgnYSpFblDhLIGaw1LaT/dqQV3Z9mtSBBkqqoq4UflXmf50nDCd0sROMZ\neLJ9LNNaHHE5VkCrt/WELa1nuXv61hZ1EHrQi9Q9GBk7cdOi5crgYQfyfAadR412\nImqdmImim2BgH/xNVtMY7MiuqBFYa1t2iQEwlseHszDqfHGimds8RhUw4kU64Oov\nk/KtFzWcK9HCmuFgB9ogwucWKasiH1QqOraTIEDE1QKBgQD8FZj72K5NlOY0TdpU\nFLGWmnQ3Xfvc2Qmo/7ZjvZpI0581MZ4svANdgIq7g1aygUlA1U4ap9OD05mtC8M8\naFJPF/lhGPLjU3vIBxxuUC6Grsqv3P82n6OmhNp0zg50NKtg428HZYfPeye0pOlw\nfld+p6VMvTrsWBGU+fkKc8J/lwKBgQD4YRkKFDnByz4UuWLrsid6ZFZoH9t3xkvt\n557vuyaOeacIqK5mbQbq1r0IAzEflfePG4vebk1aRl2c76sF8V5hN/XYbH5LWgki\nlrQVPNB7k9V7iQtWw/MyoTm9FC4XyH2+u5Dcsi7b4b7L6WZOAwwONofO6wH9FHLN\ngIOudgu4BQKBgQDWpplfEjHR1BF1xjk70Wcqw5hkMP4vHwyPwDaRlbiTfMebpwV2\nOB5xduwrIXoog9hZgYiBQBjmrr6z0ElN3dMAkHyERpdEJSlIuW1nLZWAj8P9niQf\nYi4atBPE1FUQdGzeEqvPU5Aih07XDnnMlXhxW9Vwk81hxNgrz/NVCB89PwKBgQDC\nF7Zmbum3a+hmb3xCrOQ2u2PeWE67aUT6cw57TedSXPRPSumF9tr59rafJUdk5F8h\nAKirN8zQp74NnigqK7TSCdXeuuFyZrhOxC+TjQNqHlsr/yrSMavBO8YP4E4ona7N\ntmr8W21MvDrJw+kDO1RXYvt7kZ/rMeiIeE3uriZ4NQKBgEW5FRtdepnkGvgqwtQn\nyU0U2d8RptCa5gIXfKabapR9uu+5CPd5DcjrLc9eEhfJaw1a9azWqD11tEnXvm6S\nQmW/YAPPBq9rYgOWn7AsLV0cyR/eEe99b88DQI/46jRUJ/kS/BDUFStKSyuvQz3E\ni6JLiMddiXQrRnaYDVGLlYgE\n-----END PRIVATE KEY-----\n",
+  "client_email": "cluster-service-account@steam-kingdom-311415.iam.gserviceaccount.com",
+  "client_id": "106124264579482892993",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cluster-service-account%40steam-kingdom-311415.iam.gserviceaccount.com"
+}
