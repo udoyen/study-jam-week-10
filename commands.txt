@@ -33,4 +33,13 @@ gsutil iam ch serviceAccount:cluster-service-account@steam-kingdom-311415.iam.gs
 gsutil iam ch serviceAccount:cluster-service-account@steam-kingdom-311415.iam.gserviceaccount.com:objectViewer gs://gke-state-bucket
 
 
+# Setup artifact registry
+
+gcloud services enable artifactregistry.googleapis.com
+
+gcloud auth configure-docker europe-west2-docker.pkg.dev
+
+docker tag gke-flask:latest europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest
+
+
 

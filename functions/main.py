@@ -77,7 +77,7 @@ def get_name(request):
       if request.args and 'id' in request.args:
             person_id = request.args.get('id')
             if int(person_id) > 1 or int(person_id) < len(data):
-                p = [i for i in data if i["id"] == int(person_id)]
+                p = [i for i in sorted(data, key=itemgetter('id')) if i["id"] == int(person_id)]
                 if p:
                     return jsonify(p)
                 else:
