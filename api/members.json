@@ -33,5 +33,10 @@
 		"id": 7,
 		"name": "Nbanjika",
 		"email": "nbanjika@gmail.com"
+	},
+	{
+		"id": 8,
+		"name": "Special Member",
+		"email": "specialmember@gmail.com"
 	}
 ]
