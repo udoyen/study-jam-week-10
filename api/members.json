@@ -38,5 +38,10 @@
 		"id": 8,
 		"name": "Special Member",
 		"email": "specialmember@gmail.com"
+	},
+	{
+		"id": 9,
+		"name": "Special Member2",
+		"email": "specialmember2@gmail.com"
 	}
 ]
