@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest', './api/']
+images:
+- 'europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest'
