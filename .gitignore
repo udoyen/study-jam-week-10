@@ -1,6 +1,6 @@
 terrform-gke-keyfile.json
-node_modules
-cloud-functions/node_modules
-cloud-gke/node_modules
+node_modules/
+cloud-functions/node_modules/
+cloud-gke/node_modules/
 __pycache__
 funtions/__pycache__
