@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 932 309" width="932" height="309">
+  <defs>
+    <clipPath id="inner_stroke_clip_path">
+      <path d="M 266 17 L 920.5 17 L 920.5 164.325 L 266 164.325 Z"/>
+    </clipPath>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#616161">
+      <g>
+        <circle cx="2.9999986" cy="0" r="2.99999734868332" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <clipPath id="inner_stroke_clip_path_2">
+      <path d="M 282.2971 66.999996 L 448.16016 66.999996 L 448.16016 123 L 282.2971 123 Z"/>
+    </clipPath>
+    <font-face font-family="Roboto" font-size="12" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="528.3203" cap-height="710.9375" ascent="927.7344" descent="-244.14062" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Roboto-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Roboto" font-size="12" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="528.3203" cap-height="710.9375" ascent="927.7344" descent="-244.14062" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Roboto-Bold"/>
+      </font-face-src>
+    </font-face>
+    <clipPath id="inner_stroke_clip_path_3">
+      <path d="M 471.6649 58.825 L 561.7183 58.825 L 561.7183 131.325 L 471.6649 131.325 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_4">
+      <path d="M 812.3393 66.999996 L 902.3927 66.999996 L 902.3927 123 L 812.3393 123 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_5">
+      <path d="M 698.78115 66.999996 L 788.8345 66.999996 L 788.8345 123 L 698.78115 123 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_6">
+      <path d="M 585.223 66.999996 L 675.2764 66.999996 L 675.2764 123 L 585.223 123 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_7">
+      <path d="M 22 178.5 L 440 178.5 L 440 284.5 L 22 284.5 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_8">
+      <path d="M 223.55339 215.3 L 313.60677 215.3 L 313.60677 271.3 L 223.55339 271.3 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_9">
+      <path d="M 37.5 215.3 L 203.36307 215.3 L 203.36307 271.3 L 37.5 271.3 Z"/>
+    </clipPath>
+    <clipPath id="inner_stroke_clip_path_10">
+      <path d="M 333.7971 215.3 L 423.8505 215.3 L 423.8505 271.3 L 333.7971 271.3 Z"/>
+    </clipPath>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.15.2 
+    <dc:date>2021-02-05 23:22:08 +0000</dc:date>
+  </metadata>
+  <g id="http-to-https-redirect" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+    <title>http-to-https-redirect</title>
+    <rect fill="white" x="0" y="0" width="932" height="309"/>
+    <g id="http-to-https-redirect: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_2396">
+        <g id="Graphic_2398">
+          <rect x="266" y="17" width="654.5" height="147.325" fill="white"/>
+          <rect x="266" y="17" width="654.5" height="147.325" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path)"/>
+        </g>
+        <g id="Graphic_2397"/>
+      </g>
+      <g id="Line_2388">
+        <title>path arrow - grey primary</title>
+        <path d="M 448.16016 95 L 453.5547 95 L 460.1649 95.075 L 465.1649 95.075" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_2385">
+        <g id="Graphic_2387">
+          <rect x="282.2971" y="66.999996" width="165.86307" height="56.000004" fill="white"/>
+          <rect x="282.2971" y="66.999996" width="165.86307" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_2)"/>
+        </g>
+        <g id="Graphic_2386">
+          <text transform="translate(318.60493 81)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="5.091797" y="11">Forwarding rule</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="25">34.98.77.106:443</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_2384">
+        <title>zone external - blue</title>
+        <rect x="449" y="31.525" width="273.5" height="27.3" fill="white"/>
+        <text transform="translate(459 31.525)" fill="#212121">
+          <tspan font-family="Roboto" font-size="12" font-weight="700" fill="#212121" x="91.30371" y="11">LB1 (HTTPS)</tspan>
+        </text>
+      </g>
+      <g id="Line_2383">
+        <title>path arrow - grey primary</title>
+        <path d="M 475.16016 94.5 L 525.5814 94.5 L 578.71354 94.5" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_2380">
+        <g id="Graphic_2382">
+          <rect x="471.6649" y="58.825" width="90.05339" height="72.5" fill="white"/>
+          <rect x="471.6649" y="58.825" width="90.05339" height="72.5" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_3)"/>
+        </g>
+        <g id="Graphic_2381">
+          <text transform="translate(478.11064 67.075)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="21.10547" y="11">Target</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="19.708008" y="25">HTTPS</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="11.132812" y="39">proxy with</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="53">SSL certificate</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_2377">
+        <g id="Graphic_2379">
+          <rect x="812.3393" y="66.999996" width="90.05339" height="56.000004" fill="white"/>
+          <rect x="812.3393" y="66.999996" width="90.05339" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_4)"/>
+        </g>
+        <g id="Graphic_2378">
+          <text transform="translate(831.5598 81)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="2.8242188" y="11">Backend</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="25">instances</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_2376">
+        <title>path arrow - grey primary</title>
+        <path d="M 589.97065 93.45 L 640.3919 93.45 L 693.524 93.45" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_2375">
+        <title>path arrow - grey primary</title>
+        <path d="M 702.2859 93.5 L 752.7071 93.5 L 805.8393 93.5" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_2372">
+        <g id="Graphic_2374">
+          <rect x="698.78115" y="66.999996" width="90.05339" height="56.000004" fill="white"/>
+          <rect x="698.78115" y="66.999996" width="90.05339" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_5)"/>
+        </g>
+        <g id="Graphic_2373">
+          <text transform="translate(720.82585 81)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="11">Backend</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="3.9521484" y="25">service</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_2369">
+        <g id="Graphic_2371">
+          <rect x="585.223" y="66.999996" width="90.05339" height="56.000004" fill="white"/>
+          <rect x="585.223" y="66.999996" width="90.05339" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_6)"/>
+        </g>
+        <g id="Graphic_2370">
+          <text transform="translate(605.9627 88)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="11">URL map</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_2413">
+        <g id="Graphic_2415">
+          <rect x="22" y="178.5" width="418" height="106" fill="white"/>
+          <rect x="22" y="178.5" width="418" height="106" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_7)"/>
+        </g>
+        <g id="Graphic_2414"/>
+      </g>
+      <g id="Graphic_2412">
+        <title>zone external - blue</title>
+        <rect x="109.5" y="188" width="243" height="27.3" fill="white"/>
+        <text transform="translate(119.5 188)" fill="#212121">
+          <tspan font-family="Roboto" font-size="12" font-weight="700" fill="#212121" x="79.74805" y="11">LB2 (HTTP)</tspan>
+        </text>
+      </g>
+      <g id="Line_2411">
+        <title>path arrow - grey primary</title>
+        <path d="M 223.55339 242.8 L 273.9746 242.8 L 327.10677 242.8" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_2408">
+        <g id="Graphic_2410">
+          <rect x="223.55339" y="215.3" width="90.05339" height="56.000004" fill="white"/>
+          <rect x="223.55339" y="215.3" width="90.05339" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_8)"/>
+        </g>
+        <g id="Graphic_2409">
+          <text transform="translate(251.1046 222.3)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="11">Target</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="2.165039" y="25">HTTP</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="2.7509766" y="39">proxy</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_2407">
+        <title>path arrow - grey primary</title>
+        <path d="M 73 242.8 L 161.32606 242.8 L 217.96297 242.8" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_2404">
+        <g id="Graphic_2406">
+          <rect x="37.5" y="215.3" width="165.86307" height="56.000004" fill="white"/>
+          <rect x="37.5" y="215.3" width="165.86307" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_9)"/>
+        </g>
+        <g id="Graphic_2405">
+          <text transform="translate(77.179905 229.3)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="1.7197266" y="11">Forwarding rule</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="25">34.98.77.106:80</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_2403">
+        <title>path arrow - grey primary</title>
+        <line x1="365.269" y1="215.3" x2="365.269" y2="120.5" marker-end="url(#FilledBall_Marker)" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_2400">
+        <g id="Graphic_2402">
+          <rect x="333.7971" y="215.3" width="90.05339" height="56.000004" fill="white"/>
+          <rect x="333.7971" y="215.3" width="90.05339" height="56.000004" stroke="#dfdfdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" clip-path="url(#inner_stroke_clip_path_10)"/>
+        </g>
+        <g id="Graphic_2401">
+          <text transform="translate(345.6393 229.3)" fill="#212121">
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="8.897461" y="11">URL map</tspan>
+            <tspan font-family="Roboto" font-size="12" font-weight="400" fill="#212121" x="0" y="25">with redirect</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

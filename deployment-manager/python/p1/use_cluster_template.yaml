@@ -1,0 +1,12 @@
+imports:
+- path: cluster.py
+
+
+resources:
+- name: jam-cluster
+  type: cluster.py
+  properties:
+    zone: europe-west1-b
+    cluster_name: studyjam-cluster
+    cluster_zone: europe-west1-b
+    number_of_nodes: 3
