@@ -7,7 +7,7 @@ steps:
   - create
   - s-deploy
   - --config=./deployment-manager/python/p-final/deploy_cluster.yaml
-  - --policy=ACQUIRE
+  - --automatic-rollback-on-error
 - name: "gcr.io/cloud-builders/gke-deploy"
   id: second 
   waitFor:
