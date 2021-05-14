@@ -1,0 +1,21 @@
+steps:
+- name: "gcr.io/cloud-builders/gcloud"
+  id: first 
+  args:
+  - deployment-manager
+  - create
+  - deployments
+  - s-deploy
+  - --config=./deploy_cluster.yaml
+- name: "gcr.io/cloud-builders/gke-deploy"
+  id: second 
+  waitFor:
+    - first
+  args:
+  - run
+  - --filename=./flask.yaml
+  - --image=europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest
+  - --location=europe-west2
+  - --cluster=studyjam-cluster
+images:
+- "europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest"
