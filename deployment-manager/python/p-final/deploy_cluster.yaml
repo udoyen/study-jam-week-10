@@ -1,5 +1,5 @@
 imports:
-- path: kubernetes_deployment.py
+- path: ./deployment-manager/python/p-final/kubernetes_deployment.py
 
 
 resources:
