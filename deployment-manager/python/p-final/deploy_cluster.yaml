@@ -1,5 +1,5 @@
 imports:
-- path: ./deployment-manager/python/p-final/kubernetes_deployment.py
+- path: ./deployment-manager/python/p-final/kubernetes_engine_regional_cluster.py
 
 
 resources:
