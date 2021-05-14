@@ -1,5 +1,5 @@
 imports:
-- path: ./kubernetes_engine_regional_cluster.py
+- path: kubernetes_engine_regional_cluster.py
 
 
 resources:
