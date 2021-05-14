@@ -3,8 +3,8 @@ steps:
   id: first 
   args:
   - deployment-manager
-  - create
   - deployments
+  - create
   - s-deploy
   - --config=./deploy_cluster.yaml
 - name: "gcr.io/cloud-builders/gke-deploy"
