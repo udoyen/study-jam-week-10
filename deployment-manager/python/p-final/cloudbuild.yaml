@@ -6,14 +6,14 @@ steps:
   - deployments
   - create
   - s-deploy
-  - --config=./deploy_cluster.yaml
+  - --config=./deployment-manager/python/p-final/deploy_cluster.yaml
 - name: "gcr.io/cloud-builders/gke-deploy"
   id: second 
   waitFor:
     - first
   args:
   - run
-  - --filename=./flask.yaml
+  - --filename=./deployment-manager/python/p-final/flask.yaml
   - --image=europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest
   - --location=europe-west2
   - --cluster=studyjam-cluster
