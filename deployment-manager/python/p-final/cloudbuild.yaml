@@ -1,6 +1,15 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
-  id: first 
+  id: first
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      gcloud deployment-manager deployments delete s-deploy || echo "delete"
+- name: "gcr.io/cloud-builders/gcloud"
+  id: second
+  waitFor:
+    - first
   args:
   - deployment-manager
   - deployments
@@ -9,9 +18,9 @@ steps:
   - --config=./deployment-manager/python/p-final/deploy_cluster.yaml
   - --automatic-rollback-on-error
 - name: "gcr.io/cloud-builders/gke-deploy"
-  id: second 
+  id: third
   waitFor:
-    - first
+    - second
   args:
   - run
   - --filename=./deployment-manager/python/p-final/flask.yaml
