@@ -5,7 +5,7 @@ steps:
   args:
     - '-c'
     - |
-      gcloud deployment-manager deployments delete s-deploy <<< y
+      gcloud deployment-manager deployments delete s-deploy <<< y || echo "deleted"
 - name: "gcr.io/cloud-builders/gcloud"
   id: second
   waitFor:
