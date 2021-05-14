@@ -1,0 +1,12 @@
+imports:
+- path: kubernetes_deployment.py
+- path: kubernetes_engine_regional_cluster.py
+
+
+resources:
+- name: study-cluster
+  type: kubernetes_engine_regional_cluster.py
+  properties:
+     CLUSTER_NAME: 'study-cluster'
+     CLUSTER_REGION: 'europe-west2'
+     NUM_NODES: 1

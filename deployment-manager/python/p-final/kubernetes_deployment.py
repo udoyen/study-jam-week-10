@@ -5,7 +5,7 @@ def GenerateConfig(context):
     cluster_types = {
         'Service': '{}-v1:/api/v1/namespaces/{{namespace}}/services'.format(cluster_types_root),
         'Deployment': '{}-v1beta1-apps:/apis/apps/v1beta1/namespaces/{{namespace}}/deployments'.format(cluster_types_root),
-        'Ingress': '{}-v1:/api/v1/namespaces/{{namespaces}}/ingress'.format(cluster_types_root)
+        'Ingress': '{}-v1beta1-extensions:/apis/extensions/v1beta1/namespaces/{{namespace}}/ingresses'.format(cluster_types_root)
 
     }
 
@@ -13,32 +13,8 @@ def GenerateConfig(context):
     image = context.properties['image']
     port = context.properties['port']
 
-    resources = [{
-        'name': name + '-service',
-        'type': cluster_types['Service'],
-        'properties': {
-            'apiVersion': 'v1',
-            'kind': 'Service',
-            'namespace': 'default',
-            'metadata': {
-                'name': name + '-service',
-                'labels': {
-                    'id': 'deployment-manager'
-                }
-            },
-            'spec': {
-                'type': 'NodePort',
-                'ports': [{
-                    'port': port,
-                    'targetPort': port,
-                    'protocol': 'TCP'
-                }],
-                'selector': {
-                    'app': name
-                }
-            }
-        }
-    }, {
+    resources = [
+         {
         'name': name + '-deployment',
         'type': cluster_types['Deployment'],
         'properties': {
@@ -62,10 +38,35 @@ def GenerateConfig(context):
                             'name': 'container',
                             'image': image,
                             'ports': [{
-                                'containerPort': port
+                                'containerPort': 8080
                             }]
                         }]
                     }
+                }
+            }
+    },
+        {
+        'name': name + '-service',
+        'type': cluster_types['Service'],
+        'properties': {
+            'apiVersion': 'v1',
+            'kind': 'Service',
+            'namespace': 'default',
+            'metadata': {
+                'name': name + '-service',
+                'labels': {
+                    'id': 'deployment-manager'
+                }
+            },
+            'spec': {
+                'type': 'NodePort',
+                'ports': [{
+                    'port': port,
+                    'targetPort': 8080,
+                    'protocol': 'TCP'
+                }],
+                'selector': {
+                    'app': '$(ref.{}.selfLink)'.format(name)
                 }
             }
         }
@@ -73,32 +74,32 @@ def GenerateConfig(context):
         'name': name + '-ingress',
         'type': cluster_types['Ingress'],
         'properties': {
-            'apiVersion': 'networking.k8s.io/v1',
+            'apiVersion': 'extensions/v1beta1',
             'kind': 'Ingress',
             'namespace': 'default',
             'metadata': {
                 'name': name + '-ingress',
                     'labels': {
-                        'id': 'deployment-manager-ingerss'
+                        'id': 'deployment-manager-ingress'
                     }
             },
             'spec': {
-                'rules': [
+                'rules': [{
                     'http': {
-                        'paths': [
+                        'paths': [{
                             'pathType': 'Prefix',
-                            'path': / *,
+                            'path': '/*',
                             'backend': {
                                 'service': {
-                                        'name': name + '-service',
+                                        'name': '$(ref.{}.selfLink)'.format(name + '-service'),
                                         'port': {
                                             'number': 80
                                         }
                                 }
                             }
-                        ]
+                        }]
                     }
-                ]
+                }]
             }
         }
     }

@@ -2,7 +2,7 @@ def GenerateConfig(context):
   """Generate YAML resource configuration."""
 
   cluster_name = context.properties['CLUSTER_NAME']
-  cluster_region = context.properties['CLUSTER_ZONE']
+  cluster_region = context.properties['CLUSTER_REGION']
   number_of_nodes = context.properties['NUM_NODES']
 
   resources = []
