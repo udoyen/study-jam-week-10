@@ -19,6 +19,8 @@ resources:
 - name: my-service
   type: deployment.py
   properties:
-    clusterType: kubernetes
+    clusterType: kubenetes-deploy-my-cluster-type
     image: europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest
     port: 80
+    containerPort: 8080
+
