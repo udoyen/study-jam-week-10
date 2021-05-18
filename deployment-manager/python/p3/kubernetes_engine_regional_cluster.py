@@ -2,7 +2,7 @@ def GenerateConfig(context):
   """Generate YAML resource configuration."""
 
   cluster_name = context.properties['CLUSTER_NAME']
-  cluster_region = context.properties['CLUSTER_ZONE']
+  cluster_region = context.properties['CLUSTER_REGION']
   number_of_nodes = context.properties['NUM_NODES']
 
   resources = []
@@ -46,5 +46,9 @@ def GenerateConfig(context):
   outputs.append({
         'name': 'endpoint',
         'value': '$(ref.' + cluster_name + '.endpoint)'
+  })
+  outputs.append({
+      'name': 'cluster_name',
+      'value': '$(ref.' + cluster_name + '.name)'
   })
   return {'resources': resources, 'outputs': outputs}

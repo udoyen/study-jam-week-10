@@ -1,0 +1,28 @@
+imports:
+- path: kubernetes_engine_regional_cluster.py
+- path: kubernetes_engine_apis.py
+- path: kubernetes_deployment.py
+
+
+resources:
+- name: studyjam-cluster
+  type: kubernetes_engine_regional_cluster.py
+  properties:
+     CLUSTER_NAME: 'studyjam-cluster'
+     CLUSTER_REGION: 'europe-west2'
+     NUM_NODES: 1
+
+- name: types
+  type: kubernetes_engine_apis.py
+  properties:
+    endpoint: $(ref.studyjam-cluster.endpoint)
+    clustername: $(ref.studyjam-cluster)
+
+- name: kubernetes-objects
+  type: kubernetes_deployment.py
+  properties:
+    name: 'kobjects'
+    image: 'europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest'
+    port: 80
+    delta: $(ref.types.banger)
+    namespace: 'default'
