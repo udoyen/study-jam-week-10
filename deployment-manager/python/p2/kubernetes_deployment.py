@@ -3,9 +3,9 @@ def GenerateConfig(context):
 
     cluster_types_root = '{}/kubernetes'.format(context.env['project'])
     cluster_types = {
-        'Service': '{}-v1:/api/v1/namespaces/default/services'.format(cluster_types_root),
-        'Deployment': '{}-v1beta1-apps:/apis/apps/v1beta1/namespaces/default/deployments'.format(cluster_types_root),
-        'Ingress': '{}-v1beta1-extensions:/apis/extensions/v1beta1/namespaces/default/ingresses'.format(cluster_types_root)
+        'Service': '{}-v1:/api/v1/namespaces/{namespace}/services'.format(cluster_types_root),
+        'Deployment': '{}-v1beta1-apps:/apis/apps/v1beta1/namespaces/{namespace}/deployments'.format(cluster_types_root),
+        'Ingress': '{}-v1beta1-extensions:/apis/extensions/v1beta1/namespaces/{namespace}/ingresses'.format(cluster_types_root)
 
     }
 
