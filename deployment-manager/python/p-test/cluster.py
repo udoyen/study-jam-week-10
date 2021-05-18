@@ -28,12 +28,12 @@ def GenerateConfig(context):
             'name': cluster_name,
             'type': 'gcp-types/container-v1:projects.locations.clusters',
             'properties': {
-                'parent': 'projects/{}/locations/{}'.format(context.env['project'], cluster_region),
+                'parent': 'projects/{}/locations/{}'.format(context.env['project'], context.properties["region"]),
                 'cluster': {
                     'name': cluster_name,
                     'nodePools': [{
                         'name': 'core',
-                        'initialNodeCount': number_of_nodes,
+                        'initialNodeCount': context.properties['initialNodeCount'],
                         'config': {
                             'imageType': 'COS',
                             'preemptible': True,
@@ -120,4 +120,9 @@ def GenerateConfig(context):
         }
     })
 
-    return {'resources': resources}
+    outputs = [{
+        'name': 'clusterType',
+        'value': '$(ref.' + type_name + ')'
+    }]
+
+    return {'resources': resources, 'outputs': outputs}

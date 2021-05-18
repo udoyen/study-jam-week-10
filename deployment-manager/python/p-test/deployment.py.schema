@@ -18,6 +18,7 @@ info:
 
 required:
 - clusterType
+- image
 
 properties:
   clusterType:

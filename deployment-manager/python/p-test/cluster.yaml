@@ -13,11 +13,14 @@
 # limitations under the License.
 
 imports:
-  - path: cluster.py
+- path: cluster.py
 
 resources:
 - name: my-cluster
   type: cluster.py
   properties:
-    zone: europe-west2
+    region: europe-west2
+    initialNodeCount: 1
+    port: 80
+    containerPort: 8080
 

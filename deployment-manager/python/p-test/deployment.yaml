@@ -21,3 +21,4 @@ resources:
   properties:
     clusterType: kubernetes
     image: europe-west2-docker.pkg.dev/steam-kingdom-311415/gke-deploy/gke-flask:latest
+    port: 80

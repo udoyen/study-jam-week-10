@@ -54,8 +54,8 @@ def GenerateConfig(context):
           'spec': {
               'type': 'NodePort',
               'ports': [{
-                  'port': port,
-                  'targetPort': port,
+                  'port': context.properties["port"],
+                  'targetPort': 8080,
                   'protocol': 'TCP'
               }],
               'selector': {
@@ -92,7 +92,7 @@ def GenerateConfig(context):
                           'name': 'container',
                           'image': context.properties['image'],
                           'ports': [{
-                              'containerPort': port
+                              'containerPort': context.properties["containerPort"]
                           }]
                       }]
                   }

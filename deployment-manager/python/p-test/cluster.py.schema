@@ -22,16 +22,24 @@ info:
     "type: <cluster-type>:/api/v1/namespaces/{namespace}/services"
 
 required:
-- zone
+- region
 
 properties:
-  zone:
+  region:
     type: string
-    description: Zone in which the cluster should run.
+    description: Region in which the cluster should run.
   initialNodeCount:
     type: integer
     description: Initial number of nodes desired in the cluster.
     default: 3
+  containerPort:
+    type: integer
+    description: Target port for the container
+    default: 8080
+  port:
+    type: integer
+    description: Target port for the container
+    default: 80
 
 outputs:
   clusterType:
